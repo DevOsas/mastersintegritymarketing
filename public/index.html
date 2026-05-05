@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="mastersintegrity-favicon.svg" />
+    <title>Masters Integrity Marketing | Revenue Potential Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C6A55C",
+              darkblue: "#0F172A",
+              accent: "#C6A55C",
+              lightgray: "#F3F4F6",
+              success: "#16A34A"
+            },
+            boxShadow: {
+              soft: "0 20px 60px rgba(11, 11, 11, 0.14)"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(198,165,92,0.18),_transparent_35%),linear-gradient(135deg,_#FFFBEB,_#f8fafc_55%,_#ffffff)]"></div>
+
+    <header class="px-6 py-6 lg:px-10">
+      <div class="mx-auto flex max-w-6xl items-center justify-between">
+        <div>
+          <a href="/" class="inline-flex items-center">
+            <img src="mastersintegrity-logo.svg" alt="Masters Integrity Marketing logo" class="h-11 w-auto max-w-[240px] object-contain sm:h-12 sm:max-w-[280px]" />
+          </a>
+          <h1 class="mt-3 text-2xl font-bold text-darkblue lg:text-3xl">Customer Retention Revenue Calculator</h1>
+        </div>
+        <div class="hidden rounded-full bg-white/80 px-4 py-2 text-sm font-medium text-slate-600 shadow-sm backdrop-blur md:block">
+          Structured revenue planning for disciplined growth
+        </div>
+      </div>
+    </header>
+
+    <main class="px-6 pb-16 lg:px-10">
+      <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <section class="rounded-[32px] bg-darkblue p-8 text-white shadow-soft lg:p-10">
+          <div class="max-w-xl">
+            <span class="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-yellow-100 ring-1 ring-white/15">
+              Find the hidden revenue already inside your customer base
+            </span>
+            <h2 class="mt-6 text-4xl font-bold leading-tight lg:text-5xl">
+              See how much more revenue Masters Integrity Marketing can help you unlock.
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-white/75">
+              This simple calculator estimates what better follow-up, repeat purchase reminders, and upsell campaigns could mean for your business over the next 12 months.
+            </p>
+          </div>
+
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl bg-white/10 p-5 ring-1 ring-white/10">
+              <p class="text-sm text-white/65">Retention Focus</p>
+              <p class="mt-2 text-2xl font-semibold">10% to 30%</p>
+            </div>
+            <div class="rounded-2xl bg-white/10 p-5 ring-1 ring-white/10">
+              <p class="text-sm text-white/65">PDF Report</p>
+              <p class="mt-2 text-2xl font-semibold">Delivered by Email</p>
+            </div>
+            <div class="rounded-2xl bg-white/10 p-5 ring-1 ring-white/10">
+              <p class="text-sm text-white/65">Built For</p>
+              <p class="mt-2 text-2xl font-semibold">Growth-Focused Businesses</p>
+            </div>
+          </div>
+
+          <div class="mt-10 rounded-3xl bg-white/95 p-6 text-slate-900">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-accent">What you'll get</p>
+            <ul class="mt-4 space-y-3 text-sm leading-7 text-slate-600">
+              <li>A clear estimate of your monthly and yearly revenue opportunity</li>
+              <li>A professional PDF report branded for Masters Integrity Marketing</li>
+              <li>Practical next steps to improve repeat purchases and follow-up</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="rounded-[32px] bg-white p-8 shadow-soft ring-1 ring-slate-200 lg:p-10">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Free Estimate</p>
+              <h2 class="mt-2 text-3xl font-bold text-slate-900">Calculate My Revenue Potential</h2>
+            </div>
+            <div class="rounded-full bg-yellow-50 px-4 py-2 text-sm font-semibold text-success">Fast and private</div>
+          </div>
+
+          <form id="calculatorForm" class="mt-8 space-y-5">
+            <div class="grid gap-5 md:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Business name</span>
+                <input name="businessName" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Contact name</span>
+                <input name="contactName" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Email</span>
+                <input type="email" name="email" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Phone</span>
+                <input name="phone" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+            </div>
+
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium text-slate-700">Business type</span>
+              <input name="businessType" required placeholder="e.g. Dental clinic, salon, auto repair, med spa" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+            </label>
+
+            <div class="grid gap-5 md:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Total current customers</span>
+                <input type="number" min="0" name="totalCurrentCustomers" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Average order value</span>
+                <input type="number" min="0" step="0.01" name="averageOrderValue" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Purchase frequency per year</span>
+                <input type="number" min="0" step="0.01" name="purchaseFrequencyPerYear" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Current retention rate %</span>
+                <input type="number" min="0" max="100" step="0.01" name="currentRetentionRate" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Projected retention rate %</span>
+                <input type="number" min="0" max="100" step="0.01" name="projectedRetentionRate" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Projected upsell %</span>
+                <input type="number" min="0" max="100" step="0.01" name="upsellPercent" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm font-medium text-slate-700">Projected cross-sell %</span>
+                <input type="number" min="0" max="100" step="0.01" name="crossSellPercent" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-primary focus:bg-white" />
+              </label>
+            </div>
+
+            <div class="rounded-3xl bg-slate-50 p-5 ring-1 ring-slate-200">
+              <p class="text-sm font-medium text-slate-700">What happens next</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600">
+                We'll project annual revenue from existing customers using your current retention, target retention, purchase frequency, and optional upsell and cross-sell growth assumptions.
+              </p>
+            </div>
+
+            <div id="message" class="hidden rounded-2xl px-4 py-3 text-sm"></div>
+
+            <button
+              id="submitButton"
+              type="submit"
+              class="w-full rounded-2xl bg-accent px-6 py-4 text-lg font-semibold text-white shadow-lg shadow-yellow-200 transition hover:-translate-y-0.5 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-200"
+            >
+              Calculate My Revenue Potential
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const form = document.getElementById("calculatorForm");
+      const message = document.getElementById("message");
+      const submitButton = document.getElementById("submitButton");
+
+      function showMessage(type, text) {
+        message.className =
+          "rounded-2xl px-4 py-3 text-sm " +
+          (type === "error"
+            ? "bg-red-50 text-red-700 ring-1 ring-red-100"
+            : "bg-yellow-50 text-yellow-700 ring-1 ring-green-100");
+        message.textContent = text;
+        message.classList.remove("hidden");
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        message.classList.add("hidden");
+        submitButton.disabled = true;
+        submitButton.textContent = "Preparing Your Report...";
+
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData.entries());
+
+        try {
+          const response = await fetch("/api/calculate", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+          });
+
+          const result = await response.json();
+
+          if (!response.ok) {
+            throw new Error(result.error || "Something went wrong. Please try again.");
+          }
+
+          const successMessage = result.emailSent
+            ? result.emailMessage || "Your report has been sent. Redirecting you now..."
+            : result.emailMessage || "Your revenue report was generated, but email is not configured yet. Redirecting you now...";
+
+          showMessage("success", successMessage);
+          setTimeout(() => {
+            window.location.href = "/offer";
+          }, 1200);
+        } catch (error) {
+          showMessage("error", error.message);
+          submitButton.disabled = false;
+          submitButton.textContent = "Calculate My Revenue Potential";
+        }
+      });
+    </script>
+  </body>
+</html>
+
+
